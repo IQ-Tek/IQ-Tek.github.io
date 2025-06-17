@@ -1,0 +1,43 @@
+{
+  "name": "iq-tek-website",
+  "version": "2.0.0",
+  "description": "IQ-Tek corporate website - Modern, professional, and accessible",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "lint:css": "echo 'CSS linting - install stylelint for full support'",
+    "lint:js": "echo 'JS linting - install eslint for full support'",
+    "optimize": "echo 'Image optimization - install imagemin for full support'",
+    "test": "echo 'Tests - install testing framework as needed'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IQ-Tek/IQ-Tek.github.io.git"
+  },
+  "keywords": [
+    "iq-tek",
+    "mobile-apps",
+    "security",
+    "privacy",
+    "website",
+    "responsive",
+    "accessible"
+  ],
+  "author": "IQ-Tek",
+  "license": "All Rights Reserved",
+  "homepage": "https://iq-tek.github.io",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

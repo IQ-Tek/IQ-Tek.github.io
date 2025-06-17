@@ -4,35 +4,294 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IQ-Tek | Desarrollador de Apps</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>IQ-Tek | Desarrollador de Apps Móviles Innovadoras</title>
+    <meta name="description" content="IQ-Tek desarrolla aplicaciones móviles innovadoras, seguras y eficientes. Especialistas en apps de privacidad y seguridad digital.">
+    <meta name="keywords" content="desarrollo apps, aplicaciones móviles, seguridad digital, IQ-Tek, Pass Wallet">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://iq-tek.github.io/">
+    <meta property="og:title" content="IQ-Tek | Desarrollador de Apps Móviles">
+    <meta property="og:description" content="Desarrollamos aplicaciones móviles innovadoras, seguras y eficientes.">
+    <meta property="og:image" content="assets/images/IQTek512.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://iq-tek.github.io/">
+    <meta property="twitter:title" content="IQ-Tek | Desarrollador de Apps Móviles">
+    <meta property="twitter:description" content="Desarrollamos aplicaciones móviles innovadoras, seguras y eficientes.">
+    <meta property="twitter:image" content="assets/images/IQTek512.jpg">
+    
+    <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/IQTek512.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <!-- Scripts -->
     <script src="js/acordion.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/effects.js" defer></script>
 </head>
 
 <body>
-    <h1>IQ-Tek</h1>
-    <p>Somos una marca dedicada al desarrollo de aplicaciones móviles innovadoras, seguras y eficientes.</p>
-
-    <div class="accordion">
-        <button class="accordion-toggle">Nuestras Apps ▾</button>
-        <div class="accordion-content">
-            <div class="app-card">
-                <h2>Pass Wallet</h2>
-                <p>
-                    Una aplicación de almacenamiento seguro que permite guardar contraseñas, usuarios,
-                    números de tarjetas y otros datos sensibles **de forma local** en tu dispositivo.
-                    Toda la información es encriptada con una contraseña general que nunca se sube a internet.
-                    <strong>¡Si olvidas tu clave maestra, nadie podrá acceder a tus datos, ni siquiera
-                        nosotros!</strong>
-                </p>
-                <a href="/pages/politica-passwallet.html" class="button small">Política de Privacidad</a>
-            </div>
-        </div>
+    <!-- Loading Animation -->
+    <div class="loading-animation" id="loadingAnimation">
+        <div class="loader"></div>
     </div>
 
-    <footer>
-        © 2025 IQ-Tek. Todos los derechos reservados.
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Floating Code Elements -->
+    <div class="floating-elements" id="floatingElements"></div>
+
+    <!-- Hero Section -->
+    <section class="section section--hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">IQ-Tek</h1>
+                <p class="hero-subtitle">
+                    Desarrollamos aplicaciones móviles que redefinen los estándares de seguridad digital. 
+                    Donde la innovación tecnológica se encuentra con la protección absoluta de tu privacidad.
+                </p>
+                <div class="hero-cta">
+                    <a href="#apps" class="btn btn--primary">
+                        <span>🚀</span>
+                        Explorar Apps
+                    </a>
+                    <a href="#about" class="btn btn--secondary">
+                        <span>💡</span>
+                        Conocer Más
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <div class="terminal-dot terminal-dot--red"></div>
+                            <div class="terminal-dot terminal-dot--yellow"></div>
+                            <div class="terminal-dot terminal-dot--green"></div>
+                        </div>
+                        <div class="terminal-title">security_terminal.sh</div>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">user@iq-tek:~$</span>
+                            <span class="terminal-command">./encrypt_data.sh</span>
+                        </div>
+                        <div class="terminal-line">
+                            <div class="terminal-output">🔐 Inicializando cifrado AES-256...</div>
+                        </div>
+                        <div class="terminal-line">
+                            <div class="terminal-output">🔑 Generando claves únicas...</div>
+                        </div>
+                        <div class="terminal-line">
+                            <div class="terminal-output">✅ Datos protegidos localmente</div>
+                        </div>
+                        <div class="terminal-line">
+                            <div class="terminal-output">🛡️ Zero-knowledge architecture active</div>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">user@iq-tek:~$</span>
+                            <span class="cursor"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="text-center mb-12">
+                    <h2 class="text-gradient">¿Qué Nos Hace Diferentes?</h2>
+                    <p class="text-xl max-w-3xl mx-auto">
+                        No somos solo desarrolladores. Somos arquitectos de la privacidad digital, 
+                        ingenieros de la confianza y pioneros en seguridad móvil de próxima generación.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card fade-in-up">
+                        <div class="card__icon">
+                            <span>🛡️</span>
+                        </div>                        <h3 class="card__title">Seguridad Avanzada</h3>
+                        <p class="card__description">
+                            Implementamos los estándares de cifrado más robustos de la industria con 
+                            arquitecturas zero-knowledge que garantizan tu privacidad total.
+                        </p>
+                    </div>
+                      <div class="card fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="card__icon">
+                            <span>⚡</span>
+                        </div>
+                        <h3 class="card__title">Tecnología de Vanguardia</h3>
+                        <p class="card__description">
+                            Utilizamos las tecnologías más avanzadas disponibles para crear soluciones 
+                            que no solo resuelven problemas actuales, sino que están preparadas para el futuro.
+                        </p>
+                    </div>
+                    
+                    <div class="card fade-in-up" style="animation-delay: 0.4s;">
+                        <div class="card__icon">
+                            <span>🧠</span>
+                        </div>
+                        <h3 class="card__title">UX Inteligente</h3>
+                        <p class="card__description">
+                            Diseñamos interfaces que aprenden de ti, se adaptan a tus necesidades y 
+                            simplifican la seguridad sin comprometerla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apps Section -->
+        <section class="section section--apps" id="apps">
+            <div class="container">
+                <div class="text-center mb-12">
+                    <h2 class="text-gradient">Arsenal de Seguridad Digital</h2>
+                    <p class="text-xl">
+                        Cada aplicación es una fortaleza digital diseñada para proteger lo que más valoras
+                    </p>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__toggle" aria-expanded="false" aria-controls="apps-content">
+                            <span>🔍 Descubrir Aplicaciones</span>
+                            <span class="accordion__icon">▼</span>
+                        </button>
+                        <div class="accordion__content" id="apps-content">
+                            <div class="apps-showcase">
+                                <div class="app-card fade-in-up">
+                                    <div class="app-badge">
+                                        <span>🔐</span>
+                                        <span>Zero-Knowledge</span>
+                                    </div>
+                                    
+                                    <h3 class="app-title">Pass Wallet</h3>
+                                    <p class="app-description">
+                                        La evolución del almacenamiento seguro. Una bóveda digital impenetrable que 
+                                        protege tus credenciales más críticas utilizando criptografía de grado militar 
+                                        y arquitectura zero-knowledge.
+                                    </p>
+                                    
+                                    <ul class="app-features">
+                                        <li>Cifrado AES-256 de grado militar con autenticación integrada</li>
+                                        <li>Arquitectura zero-knowledge: ni nosotros podemos ver tus datos</li>
+                                        <li>Cada dato protegido con claves criptográficas únicas</li>
+                                        <li>Almacenamiento local: tus datos nunca abandonan tu dispositivo</li>
+                                        <li>Interfaz adaptativa con IA para una UX personalizada</li>
+                                        <li>Respaldo cifrado con verificación de integridad</li>
+                                    </ul>
+                                    
+                                    <div style="background: rgba(255, 107, 53, 0.1); border: 1px solid rgba(255, 107, 53, 0.3); padding: 1.5rem; border-radius: 1rem; margin: 1.5rem 0;">
+                                        <p style="color: var(--neon-orange); font-weight: 600; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                                            <span>⚠️</span>
+                                            <strong>Compromiso de Privacidad Total:</strong>                                            Si olvidas tu clave maestra, no será posible recuperar tus datos debido a nuestro 
+                                            diseño zero-knowledge. Esto garantiza que nadie más pueda acceder a tu información.
+                                        </p>
+                                    </div>
+                                    
+                                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                        <a href="/pages/politica-passwallet.html" class="btn btn--outline btn--sm">
+                                            📄 Arquitectura de Seguridad
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.iqtek.pass_wallet&pcampaignid=web_share" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer"
+                                           class="btn btn--primary btn--sm glow">
+                                            📱 Obtener en Google Play
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Future Apps Teaser -->
+                                <div class="app-card fade-in-up" style="animation-delay: 0.3s;">
+                                    <div class="app-badge" style="background: linear-gradient(135deg, var(--neon-purple), #7c3aed);">
+                                        <span>🚀</span>
+                                        <span>En Desarrollo</span>
+                                    </div>
+                                    
+                                    <h3 class="app-title">Próximas Innovaciones</h3>
+                                    <p class="app-description">
+                                        Estamos forjando el futuro de la seguridad móvil. Nuestros laboratorios de I+D 
+                                        trabajan en aplicaciones que redefinirán cómo interactúas con la tecnología.
+                                    </p>
+                                      <ul class="app-features">
+                                        <li>Comunicación cifrada de extremo a extremo para mensajería</li>
+                                        <li>Autenticación biométrica avanzada sin dependencia de servidores</li>
+                                        <li>Análisis local de patrones para detección de amenazas</li>
+                                        <li>Sistemas descentralizados para verificación de identidad</li>
+                                        <li>Interfaces intuitivas para gestión avanzada de seguridad</li>
+                                    </ul>
+                                    
+                                    <div style="display: flex; gap: 1rem;">
+                                        <a href="#contact" class="btn btn--secondary btn--sm pulse">
+                                            🔮 Acceso Anticipado
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="text-gradient">¿Listo para Mejorar tu Seguridad?</h2>
+                    <p class="text-xl mb-8">
+                        Únete a la vanguardia de la seguridad digital. Contacta con nuestros arquitectos 
+                        de ciberseguridad para discutir tu próximo proyecto.
+                    </p>
+                    <a href="mailto:contacto.iqtek@gmail.com" class="btn btn--primary glow pulse">
+                        🚀 Iniciar Colaboración
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">IQ-Tek</div>
+                <p class="footer__description">
+                    Arquitectos de la privacidad digital. Pioneros en seguridad móvil de próxima generación. 
+                    Donde la innovación se encuentra con la protección absoluta.
+                </p>
+                
+                <div class="footer__links">
+                    <a href="#about" class="footer__link">Nuestra Visión</a>
+                    <a href="#apps" class="footer__link">Arsenal Digital</a>
+                    <a href="#contact" class="footer__link">Colaborar</a>
+                    <a href="/pages/politica-passwallet.html" class="footer__link">Arquitectura de Seguridad</a>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p>&copy; 2025 IQ-Tek. Redefiniendo los límites de la seguridad digital.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
